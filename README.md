@@ -17,6 +17,7 @@ Docker 이미지 빌드부터 실행, Docker Hub 푸시까지 포함한 실습�
 
 ## 프로젝트 구조
 
+```
 memoApp-Docker/
 ├── app.py # Flask 앱 메인 파일
 ├── templates/
@@ -25,7 +26,7 @@ memoApp-Docker/
 ├── Dockerfile # Docker 이미지 빌드 정의
 ├── docker-compose.yml # 선택적, Docker Compose 설정 파일
 └── README.md # 프로젝트 설명 문서
-
+```
 
 
 ---

@@ -36,29 +36,32 @@ memoApp-Docker/
 ### Docker 이미지 빌드 & 실행
 
 ```bash
-docker build -t memoapp .
-docker run -d -p 5000:5000 memoapp
-Docker Hub에서 이미지 받아 실행
+docker build -t  junhan0722/my-flask-note-app:v1.0
+docker run -d -p 5000:5000  junhan0722/my-flask-note-app:v1.0
 ```
 
-```bash
-docker pull junhui122323/memoapp-docker
-docker run -d -p 5000:5000 junhui122323/memoapp-docker
-Docker Volume으로 데이터 유지
-```
+### Docker Hub에서 이미지 받아 실행
 
 ```bash
-docker run -d -p 5000:5000 -v $(pwd)/memo.json:/app/memo.json memoapp
+docker pull junhui122323/ junhan0722/my-flask-note-app:v1.0
+docker run -d -p 5000:5000 junhui122323/ junhan0722/my-flask-note-app:v1.0
+```
+
+### Docker Volume으로 데이터 유지
+
+```bash
+docker run -d -p 5000:5000 -v $(pwd)/memo.json:/app/memo.json  junhan0722/my-flask-note-app:v1.0
+
 ```
 
 ### 앞으로 할 일
-메모 수정 및 삭제 기능 추가
+- 메모 수정 및 삭제 기능 추가
 
-사용자별 데이터 관리 기능 도입
+- 사용자별 데이터 관리 기능 도입
 
-데이터베이스(SQLite) 연동
+- 데이터베이스(SQLite) 연동
 
-CI/CD 자동화 (GitHub Actions 연동)
+- CI/CD 자동화 (GitHub Actions 연동)
 
 ### 개발자
 한준희 — GitHub/junhui122323

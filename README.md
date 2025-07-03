@@ -36,9 +36,9 @@ memoApp-Docker/
 docker build -t memoapp .
 docker run -d -p 5000:5000 memoapp
 Docker Hub에서 이미지 받아 실행
-bash
+bash'''
 
-```bash
+
 docker pull junhui122323/memoapp-docker
 docker run -d -p 5000:5000 junhui122323/memoapp-docker
 Docker Volume으로 데이터 유지

@@ -26,10 +26,6 @@ memoApp-Docker/
 ├── docker-compose.yml # 선택적, Docker Compose 설정 파일
 └── README.md # 프로젝트 설명 문서
 
-yaml
-복사
-편집
-
 ---
 
 ## 빠른 시작
@@ -41,14 +37,13 @@ docker build -t memoapp .
 docker run -d -p 5000:5000 memoapp
 Docker Hub에서 이미지 받아 실행
 bash
-복사
-편집
+
+```bash
 docker pull junhui122323/memoapp-docker
 docker run -d -p 5000:5000 junhui122323/memoapp-docker
 Docker Volume으로 데이터 유지
 bash
-복사
-편집
+
 docker run -d -p 5000:5000 -v $(pwd)/memo.json:/app/memo.json memoapp
 앞으로 할 일
 메모 수정 및 삭제 기능 추가

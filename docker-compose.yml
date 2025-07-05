@@ -1,0 +1,10 @@
+services:
+  flask-app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: flask-memo
+    ports:
+      - "5050:5000"
+    volumes:
+      - ./memo.json:/app/memo.json

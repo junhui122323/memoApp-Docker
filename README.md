@@ -1,9 +1,7 @@
 # MemoApp-Docker
 
 간단한 메모 작성 웹앱을 Flask와 Docker로 구현한 프로젝트입니다.  
-Docker 이미지 빌드부터 실행, Docker Hub 푸시까지 포함한 실습용 예제입니다.
-
----
+Docker 이미지 빌드부터 실행--
 
 ## 주요 기능
 

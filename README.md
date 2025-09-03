@@ -36,7 +36,7 @@ memoApp-Docker/
 ### Docker 이미지 빌드 & 실행
 
 ```bash
-docker build -t  junhan0722/my-flask-note-app:v1.0
+docker build -t  junhan0722/my-flask-note-app:v1.0 .
 docker run -d -p 5000:5000  junhan0722/my-flask-note-app:v1.0
 ```
 
